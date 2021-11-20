@@ -28,5 +28,16 @@ public class AppTest
     Assert.assertTrue(isLeapYears); //Assert -> Le test est bon si isLeapYears est vrai.
     }
 
-    
+    @Test
+    public void isLeapYearsYearDivisibleBy100ButNotBy400ShouldReturnFalse() {
+    //Arrange
+    int year = 1900;
+    LeapYears leapYears = new LeapYears();
+    //Act
+    boolean isLeapYears = leapYears.isLeapYears(year);
+    //Assert
+    Assert.assertFalse(isLeapYears);
+    }
+
+
 }
