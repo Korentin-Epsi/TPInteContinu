@@ -38,6 +38,17 @@ public class AppTest
     //Assert
     Assert.assertFalse(isLeapYears);
     }
+    @Test
+    public void isLeapYearsYearDivisibleBy4ButNotBy100ShouldReturnTrue() {
+    //Arrange
+    int year = 1960;
+    LeapYears leapYears = new LeapYears();
+    //Act
+    boolean isLeapYears = leapYears.isLeapYears(year);
+    //Assert
+    Assert.assertTrue(isLeapYears);
+    }
+
 
 
 }
