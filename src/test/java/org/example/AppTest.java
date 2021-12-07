@@ -74,7 +74,7 @@ public class AppTest
     }
 
     @Test
-    public void isTataYoyoDivisibleBy5ShouldReturnTata()
+    public void isTataYoyoDivisibleBy5ShouldReturnYoyo()
     {
         //Arrange
         int nb = 20;
@@ -83,5 +83,17 @@ public class AppTest
         String  isTataYoyo = tataYoyo.isTataYoyo(nb);
         //Assert
         Assert.assertEquals("Yoyo",isTataYoyo);
+    }
+
+    @Test
+    public void isTataYoyoDivisibleBy5And3ShouldReturnTataYoyo()
+    {
+        //Arrange
+        int nb = 15;
+        TataYoyo tataYoyo = new TataYoyo();
+        //Act
+        String  isTataYoyo = tataYoyo.isTataYoyo(nb);
+        //Assert
+        Assert.assertEquals("TataYoyo",isTataYoyo);
     }
 }
