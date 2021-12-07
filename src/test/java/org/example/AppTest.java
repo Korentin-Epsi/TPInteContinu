@@ -61,14 +61,15 @@ public class AppTest
     Assert.assertFalse(isLeapYears);
     }
 
+    @Test
     public void isTataYoyoDivisibleBy3ShouldReturnTata()
     {
-        int nb = 4;
-
+        //Arrange
+        int nb = 3;
         TataYoyo tataYoyo = new TataYoyo();
-
-        String  isTataYoyo=tataYoyo.isTataYoyo(nb);
+        //Act
+        String  isTataYoyo = tataYoyo.isTataYoyo(nb);
         //Assert
-        Assert.assertArrayEquals(new String[]{"Tata"}, new String[]{isTataYoyo});
+        Assert.assertEquals("Tata",isTataYoyo);
     }
 }
