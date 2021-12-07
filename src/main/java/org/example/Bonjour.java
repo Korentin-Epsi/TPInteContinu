@@ -26,23 +26,26 @@ public class Bonjour {
                 compteurVirgule++;
             }
         }
+
+        //sert à faire la gestion des virgules pour la question 4, 5 et 6
         if(compteurVirgule>=1)
         {
             String[] nomSplit =nom.split(",");
             String laPhrase="";
-            for(int x=0;x<nomSplit.length-1;x++)
+            for(int x=0;x<nomSplit.length;x++)
             {
-                if(x== nomSplit.length-1)
+                if(x == nomSplit.length-1)
                 {
-                    laPhrase=laPhrase + nomSplit[x];
+                    laPhrase=laPhrase+" et "+nomSplit[x];
                 }
+
                 else
                 {
-                    laPhrase=nomSplit[x]+" et ";
+                    laPhrase=laPhrase+","+nomSplit[x];
                 }
 
             }
-            return "Bonjour, "+laPhrase;
+            return "Bonjour"+laPhrase+".";
         }
         if (compteurMaj <=1)
         {

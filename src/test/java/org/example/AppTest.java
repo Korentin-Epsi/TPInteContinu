@@ -138,6 +138,17 @@ public class AppTest
         Bonjour bonjour= new Bonjour();
         String isSaluer= bonjour.saluer(nom);
         //Assert
-        Assert.assertEquals("BONJOUR, Barret et Jean.",isSaluer);
+        Assert.assertEquals("Bonjour,Barret et Jean.",isSaluer);
+    }
+
+    @Test
+    public void isBonjourHaveLotOfVirguleNameReturnBonjourLesNomsWithVirgule()
+    {
+        //Arrange
+        String nom="Barret,Jean,Yves";
+        Bonjour bonjour= new Bonjour();
+        String isSaluer= bonjour.saluer(nom);
+        //Assert
+        Assert.assertTrue("Bonjour,Barret,Jean et Yves.",isSaluer);
     }
 }
