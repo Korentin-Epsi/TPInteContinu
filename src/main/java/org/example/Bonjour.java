@@ -27,7 +27,7 @@ public class Bonjour {
             }
             if (compteurMaj >=2)
             {
-                return "BONJOUR," ;
+                return "BONJOUR, "+nom.toUpperCase()+"." ;
             }
         }
 
