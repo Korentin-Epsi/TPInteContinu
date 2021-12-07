@@ -72,4 +72,16 @@ public class AppTest
         //Assert
         Assert.assertEquals("Tata",isTataYoyo);
     }
+
+    @Test
+    public void isTataYoyoDivisibleBy5ShouldReturnTata()
+    {
+        //Arrange
+        int nb = 3;
+        TataYoyo tataYoyo = new TataYoyo();
+        //Act
+        String  isTataYoyo = tataYoyo.isTataYoyo(nb);
+        //Assert
+        Assert.assertEquals("Yoyo",isTataYoyo);
+    }
 }
