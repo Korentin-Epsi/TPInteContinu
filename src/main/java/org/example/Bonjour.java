@@ -4,9 +4,12 @@ public class Bonjour {
 
     public String saluer(String nom)
     {
-
+        if(nom==null || nom=="")
+        {
+            return "Bonjour, l'ami.";
+        }
         //Code si différent de vide ou null
-
+        else{
             int compteurMaj=0;
         for (int i=0;i<nom.length();i++)
         {
@@ -19,7 +22,7 @@ public class Bonjour {
         {
             return "Bonjour, "+nom+".";
         }
-        
+        }
 
 
         return "";
