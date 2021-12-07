@@ -149,6 +149,6 @@ public class AppTest
         Bonjour bonjour= new Bonjour();
         String isSaluer= bonjour.saluer(nom);
         //Assert
-        Assert.assertTrue("Bonjour,Barret,Jean et Yves.",isSaluer);
+        Assert.assertEquals("Bonjour,Barret,Jean et Yves.",isSaluer);
     }
 }
