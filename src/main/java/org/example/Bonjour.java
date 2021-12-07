@@ -1,5 +1,7 @@
 package org.example;
 
+import java.util.Locale;
+
 public class Bonjour {
 
     public String saluer(String nom)
@@ -11,18 +13,24 @@ public class Bonjour {
         //Code si différent de vide ou null
         else{
             int compteurMaj=0;
-        for (int i=0;i<nom.length();i++)
-        {
-            if(Character.isUpperCase(nom.indexOf(i)))
+            for (int i=0;i<nom.length();i++)
             {
-                compteurMaj=+1;
+                char character = nom.charAt(i);
+                if(Character.isUpperCase(character))
+                {
+                    compteurMaj++;
+                }
+            }
+            if (compteurMaj <=1)
+            {
+                return "Bonjour, "+nom+".";
+            }
+            if (compteurMaj >=2)
+            {
+                return "BONJOUR," ;
             }
         }
-        if (compteurMaj <=1)
-        {
-            return "Bonjour, "+nom+".";
-        }
-        }
+
 
 
         return "";

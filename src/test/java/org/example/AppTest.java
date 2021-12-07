@@ -119,4 +119,14 @@ public class AppTest
         //Assert
         Assert.assertEquals("Bonjour, l'ami.",isSaluer);
     }
+    @Test
+    public void isBonjourHaveMajNameReturnBonjourCrier()
+    {
+        //Arrange
+        String nom="BARRET";
+        Bonjour bonjour= new Bonjour();
+        String isSaluer= bonjour.saluer(nom);
+        //Assert
+        Assert.assertEquals("BONJOUR, BARRET.",isSaluer);
+    }
 }
