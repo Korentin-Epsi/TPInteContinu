@@ -151,4 +151,17 @@ public class AppTest
         //Assert
         Assert.assertEquals("Bonjour,Barret,Jean et Yves.",isSaluer);
     }
+
+     @Test
+    public void isBonjourHaveLotOfVirguleNameAndMajReturnBonjourLesNomsWithVirgule()
+    {
+        //Arrange
+        String nom="Yves,Jean,BARRET";
+        Bonjour bonjour= new Bonjour();
+        String isSaluer= bonjour.saluer(nom);
+        //Assert
+        Assert.assertEquals("Bonjour,Barret,Jean et Yves.",isSaluer);
+    }
+
+
 }

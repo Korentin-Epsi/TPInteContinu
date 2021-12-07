@@ -1,5 +1,6 @@
 package org.example;
 
+
 import java.util.Locale;
 
 public class Bonjour {
@@ -27,25 +28,38 @@ public class Bonjour {
             }
         }
 
-        //sert à faire la gestion des virgules pour la question 4, 5 et 6
+        //sert à faire la gestion des virgules pour la question 4, 5
         if(compteurVirgule>=1)
         {
             String[] nomSplit =nom.split(",");
+            String laPhraseMaj="";
             String laPhrase="";
             for(int x=0;x<nomSplit.length;x++)
             {
+                String unNom=nomSplit[x];
+                boolean nomMaj=true;
+                for(int a=0;a<unNom.length();a++)
+                {
+                    if(!Character.isUpperCase(unNom.charAt(a)))
+                    {
+                        nomMaj=false;
+                    }
+                }
+                if(nomMaj==true)
+                {
+                   laPhraseMaj="ET BONJOUR "+nomSplit[x]+".";
+                }
                 if(x == nomSplit.length-1)
                 {
                     laPhrase=laPhrase+" et "+nomSplit[x];
                 }
-
                 else
                 {
                     laPhrase=laPhrase+","+nomSplit[x];
                 }
 
             }
-            return "Bonjour"+laPhrase+".";
+            return "Bonjour"+laPhrase+"."+laPhraseMaj;
         }
         if (compteurMaj <=1)
         {
