@@ -77,7 +77,7 @@ public class AppTest
     public void isTataYoyoDivisibleBy5ShouldReturnTata()
     {
         //Arrange
-        int nb = 3;
+        int nb = 20;
         TataYoyo tataYoyo = new TataYoyo();
         //Act
         String  isTataYoyo = tataYoyo.isTataYoyo(nb);
