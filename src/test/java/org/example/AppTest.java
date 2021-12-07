@@ -96,4 +96,15 @@ public class AppTest
         //Assert
         Assert.assertEquals("TataYoyo",isTataYoyo);
     }
+
+    @Test
+    public void isBonjourHaveNameReturnBonjourName()
+    {
+        //Arrange
+        String nom="Cloud";
+        Bonjour bonjour= new Bonjour();
+        String isSaluer= bonjour.saluer(nom);
+        //Assert
+        Assert.assertEquals("Bonjour, Cloud.",isSaluer);
+    }
 }
