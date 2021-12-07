@@ -163,5 +163,16 @@ public class AppTest
         Assert.assertEquals("Bonjour,Yves et Jean.ET BONJOUR BARRET.",isSaluer);
     }
 
+    @Test
+    public void isCalculRomainXVDonne15()
+    {
+        //arrange
+        String chiffreRomain="XV";
+        CalculRomain isCalculRomain= new CalculRomain();
+        int isCalcul= isCalculRomain.isCalculRomain(chiffreRomain);
+        //Assert
+        Assert.assertTrue(15,isCalcul);
+    }
+
 
 }
