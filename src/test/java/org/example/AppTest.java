@@ -129,4 +129,15 @@ public class AppTest
         //Assert
         Assert.assertEquals("BONJOUR, BARRET.",isSaluer);
     }
+
+    @Test
+    public void isBonjourHaveVirguleNameReturnBonjourLesNomsWithVirgule()
+    {
+        //Arrange
+        String nom="Barret,Jean";
+        Bonjour bonjour= new Bonjour();
+        String isSaluer= bonjour.saluer(nom);
+        //Assert
+        Assert.assertEquals("BONJOUR, Barret et Jean.",isSaluer);
+    }
 }
