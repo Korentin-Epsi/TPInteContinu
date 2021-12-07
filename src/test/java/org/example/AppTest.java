@@ -174,5 +174,16 @@ public class AppTest
         Assert.assertEquals(15,isCalcul);
     }
 
+    @Test
+    public void isCalculRomainMXVDonne1015()
+    {
+        //arrange
+        String chiffreRomain="MXV";
+        CalculRomain isCalculRomain= new CalculRomain();
+        int isCalcul= isCalculRomain.isCalculRomain(chiffreRomain);
+        //Assert
+        Assert.assertEquals("1015",isCalcul);
+    }
+
 
 }

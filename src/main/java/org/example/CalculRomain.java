@@ -43,8 +43,8 @@ public class CalculRomain {
 
         for (int x=0;x<nombreConvertie.size();x++)
         {
+                calcul=calcul+nombreConvertie.get(x);
 
-            calcul=calcul+nombreConvertie.get(x);
         }
         return calcul;
     }
