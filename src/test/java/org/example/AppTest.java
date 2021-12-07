@@ -182,7 +182,7 @@ public class AppTest
         CalculRomain isCalculRomain= new CalculRomain();
         int isCalcul= isCalculRomain.isCalculRomain(chiffreRomain);
         //Assert
-        Assert.assertEquals("1015",isCalcul);
+        Assert.assertEquals(1015,isCalcul);
     }
 
 
