@@ -171,7 +171,7 @@ public class AppTest
         CalculRomain isCalculRomain= new CalculRomain();
         int isCalcul= isCalculRomain.isCalculRomain(chiffreRomain);
         //Assert
-        Assert.assertTrue(15,isCalcul);
+        Assert.assertEquals(15,isCalcul);
     }
 
 
