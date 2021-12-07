@@ -156,11 +156,11 @@ public class AppTest
     public void isBonjourHaveLotOfVirguleNameAndMajReturnBonjourLesNomsWithVirgule()
     {
         //Arrange
-        String nom="Yves,Jean,BARRET";
+        String nom="Yves,BARRET,Jean";
         Bonjour bonjour= new Bonjour();
         String isSaluer= bonjour.saluer(nom);
         //Assert
-        Assert.assertEquals("Bonjour,Barret,Jean et Yves.",isSaluer);
+        Assert.assertEquals("Bonjour,Yves et Jean.ET BONJOUR BARRET.",isSaluer);
     }
 
 

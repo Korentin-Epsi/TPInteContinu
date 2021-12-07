@@ -49,7 +49,8 @@ public class Bonjour {
                 {
                    laPhraseMaj="ET BONJOUR "+nomSplit[x]+".";
                 }
-                if(x == nomSplit.length-1)
+                else {
+                    if(x == nomSplit.length-1)
                 {
                     laPhrase=laPhrase+" et "+nomSplit[x];
                 }
@@ -58,6 +59,7 @@ public class Bonjour {
                     laPhrase=laPhrase+","+nomSplit[x];
                 }
 
+                }
             }
             return "Bonjour"+laPhrase+"."+laPhraseMaj;
         }
@@ -69,11 +71,6 @@ public class Bonjour {
         {
             return "BONJOUR, "+nom.toUpperCase()+"." ;
         }
-
-
-
-
-
 
         return "";
     }
