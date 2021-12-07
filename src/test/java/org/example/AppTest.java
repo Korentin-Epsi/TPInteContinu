@@ -107,4 +107,16 @@ public class AppTest
         //Assert
         Assert.assertEquals("Bonjour, Cloud.",isSaluer);
     }
+
+
+    @Test
+    public void isBonjourHaveNULLNameReturnBonjourAmi()
+    {
+        //Arrange
+        String nom=null;
+        Bonjour bonjour= new Bonjour();
+        String isSaluer= bonjour.saluer(nom);
+        //Assert
+        Assert.assertEquals("Bonjour, Cloud.",isSaluer);
+    }
 }
